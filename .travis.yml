@@ -1,0 +1,10 @@
+language: java
+matrix:
+  include:
+  - jdk: openjdk11
+dist: xenial
+script:
+- ./gradlew clean build
+cache:
+  directories:
+  - $HOME/.gradle
